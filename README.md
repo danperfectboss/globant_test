@@ -21,7 +21,7 @@ NOTE:  If some module can´t not be imported use ***pip install < NAME MODULE >*
 # Using Docker for the proyect
 1.- Clone the repo
 <br>
-2.- Create the image with the Dockerfile executing the command: ***docker build -t < NAME IMAGE >***.
+2.- Create the image with the Dockerfile executing the command: ***docker build -t < NAME IMAGE >***  .
 <br>
 3.- Run the image in a container using the command: ***docker run -it -p 7000:4000 < NAME IMAGE >***
 <br>
