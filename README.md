@@ -8,13 +8,13 @@ This repository contain a interview test from globant
 <br>
 3.- Activate the VENV with the command **"source <NAME>/bin/activate"**
 <br>
-4.- Install requirements "pip install -r requirements.txt"
+4.- Install requirements ***"pip install -r requirements.txt"***
 <br>
 5.- Run the project with the command **"python app.py"**
 <br>
 6.- Go into the browser to this address http://127.0.0.1:4000/
 <br>
-NOTE:  If some module can´t not be imported use **pip install <NAME MODULE>**
+NOTE:  If some module can´t not be imported use **"pip install <NAME MODULE>"**
   
 
 
