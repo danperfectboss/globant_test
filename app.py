@@ -1,24 +1,18 @@
 from crypt import methods
 from distutils.log import debug
 from operator import ge
-from socket import timeout
 import requests
 from flask import Flask, jsonify, request, redirect
 from datetime import datetime, date
-from flask_caching import Cache
+
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
-cache = Cache(config={"CACHE_TYPE":"RedisCache", "CACHE_REDIS_HOST":"0.0.0.0", "CACHE_REDIS_PORT":6379 })
-cache.init_app(app)
-
 
 @app.route('/', methods=['GET'])
 def initial():
     return redirect('/get?city=Mexico&country=mx')
 
-#Main function with cache set 2 minuts
 @app.route('/get', methods=['GET'])
-@cache.cached(timeout = 2000)
 def get_info():
     '''Function recieves 2 params city and country, get the data from 
     open weather and return especific response readable for the customer.
